@@ -6,9 +6,9 @@ After that change to coffeemaker directory inside the path that you have chosen 
 
 mvn spring-boot:run
 
-After that you could enter to http://localhost:8080/ in you browser and see the Coffee Machine working.
+After that, you could enter to http://localhost:8080/ in you browser and see the Coffee Machine working.
 
-You can buy products if you have the stock in the machine. 
+You can buy products if you have stock in the machine. 
 To see the machine's stock you can use your browser at http://localhost:8080/coffeemaker/products
 
 You can modify the products in the machine with the beans.xml file located in the project.
