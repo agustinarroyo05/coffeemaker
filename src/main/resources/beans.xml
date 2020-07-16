@@ -1,0 +1,86 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:util="http://www.springframework.org/schema/util"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> 
+
+   <bean id = "nestleCoffee" class = "com.coffeemaker.domain.Product">
+      <property name = "name" value = "Nestle Coffee"/>
+      <property name = "productFamily" value = "#{T(com.coffeemaker.domain.Product.ProductFamily).COFFEE}"/>
+      <property name = "stock" value = "1000"/>
+      <property name = "rawMatPerUnit" value = "25"/>
+      <property name = "price" value = "50"/>
+      <property name = "waterNeeded" value = "250"/>
+   </bean>
+   <bean id = "laVirginiaCoffee" class = "com.coffeemaker.domain.Product">
+      <property name = "name" value = "La Virginia Coffee"/>
+      <property name = "productFamily" value = "#{T(com.coffeemaker.domain.Product.ProductFamily).COFFEE}"/>
+      <property name = "stock" value = "1000"/>
+      <property name = "rawMatPerUnit" value = "25"/>
+      <property name = "price" value = "45"/>
+      <property name = "waterNeeded" value = "250"/>
+   </bean>
+   <bean id = "cabralesCoffee" class = "com.coffeemaker.domain.Product">
+      <property name = "name" value = "Cabrales Coffee"/>
+      <property name = "productFamily" value = "#{T(com.coffeemaker.domain.Product.ProductFamily).COFFEE}"/>
+      <property name = "stock" value = "1000"/>
+      <property name = "rawMatPerUnit" value = "25"/>
+      <property name = "price" value = "45"/>
+      <property name = "waterNeeded" value = "250"/>
+   </bean>
+   <bean id = "laMorenitaCoffee" class = "com.coffeemaker.domain.Product">
+      <property name = "name" value = "La Morenita Coffee"/>
+      <property name = "productFamily" value = "#{T(com.coffeemaker.domain.Product.ProductFamily).COFFEE}"/>
+      <property name = "stock" value = "1000"/>
+      <property name = "rawMatPerUnit" value = "25"/>
+      <property name = "price" value = "45"/>
+      <property name = "waterNeeded" value = "250"/>
+   </bean>
+   <bean id = "laSerenisimaMilk" class = "com.coffeemaker.domain.Product">
+      <property name = "name" value = "La serenisima Milk"/>
+      <property name = "productFamily" value = "#{T(com.coffeemaker.domain.Product.ProductFamily).MILK}"/>
+      <property name = "stock" value = "1000"/>
+      <property name = "rawMatPerUnit" value = "15"/>
+      <property name = "price" value = "10"/>
+      <property name = "waterNeeded" value = "15"/>
+   </bean>
+   <bean id = "aguilaCocoa" class = "com.coffeemaker.domain.Product">
+      <property name = "name" value = "Aguila Cocoa"/>
+      <property name = "productFamily" value = "#{T(com.coffeemaker.domain.Product.ProductFamily).COCOA}"/>
+      <property name = "stock" value = "1000"/>
+      <property name = "rawMatPerUnit" value = "5"/>
+      <property name = "price" value = "15"/>
+      <property name = "waterNeeded" value = "0"/>
+   </bean>
+   <bean id = "aguilaChocolate" class = "com.coffeemaker.domain.Product">
+      <property name = "name" value = "Aguila Chocolate"/>
+      <property name = "productFamily" value = "#{T(com.coffeemaker.domain.Product.ProductFamily).CHOCOLATE}"/>
+      <property name = "stock" value = "1000"/>
+      <property name = "rawMatPerUnit" value = "5"/>
+      <property name = "price" value = "15"/>
+      <property name = "waterNeeded" value = "0"/>
+   </bean>
+   <bean id = "bacardiRon" class = "com.coffeemaker.domain.Product">
+      <property name = "name" value = "Bacardi Ron"/>
+      <property name = "productFamily" value = "#{T(com.coffeemaker.domain.Product.ProductFamily).RON}"/>
+      <property name = "stock" value = "20"/>
+      <property name = "rawMatPerUnit" value = "20"/>
+      <property name = "price" value = "15"/>
+      <property name = "waterNeeded" value = "0"/>
+   </bean>
+   <!--    <bean id = "machine" class = "com.coffeemaker.domain.Machine"/> -->
+   
+   <util:map id="products" map-class="java.util.HashMap" key-type="java.lang.String" value-type="com.coffeemaker.domain.Product"> 
+	  <entry key="nestleCoffee" value-ref="nestleCoffee"/>
+	  <entry key="laVirginiaCoffee" value-ref="laVirginiaCoffee"/>
+	  <entry key="cabralesCoffee"  value-ref="cabralesCoffee"/>
+	  <entry key="laMorenitaCoffee" value-ref="laMorenitaCoffee"/>
+	  <entry key="aguilaCocoa" value-ref="aguilaCocoa"/>
+	  <entry key="aguilaChocolate" value-ref="aguilaChocolate"/>
+	  <entry key="bacardiRon" value-ref="bacardiRon"/> 
+	</util:map>
+
+</beans>
