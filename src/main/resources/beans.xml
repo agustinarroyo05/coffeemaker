@@ -44,7 +44,7 @@
       <property name = "productFamily" value = "#{T(com.coffeemaker.domain.Product.ProductFamily).MILK}"/>
       <property name = "stock" value = "1000"/>
       <property name = "rawMatPerUnit" value = "15"/>
-      <property name = "price" value = "10"/>
+      <property name = "price" value = "5"/>
       <property name = "waterNeeded" value = "15"/>
    </bean>
    <bean id = "aguilaCocoa" class = "com.coffeemaker.domain.Product">
@@ -52,7 +52,7 @@
       <property name = "productFamily" value = "#{T(com.coffeemaker.domain.Product.ProductFamily).COCOA}"/>
       <property name = "stock" value = "1000"/>
       <property name = "rawMatPerUnit" value = "5"/>
-      <property name = "price" value = "15"/>
+      <property name = "price" value = "10"/>
       <property name = "waterNeeded" value = "0"/>
    </bean>
    <bean id = "aguilaChocolate" class = "com.coffeemaker.domain.Product">
@@ -68,7 +68,7 @@
       <property name = "productFamily" value = "#{T(com.coffeemaker.domain.Product.ProductFamily).RON}"/>
       <property name = "stock" value = "20"/>
       <property name = "rawMatPerUnit" value = "20"/>
-      <property name = "price" value = "15"/>
+      <property name = "price" value = "20"/>
       <property name = "waterNeeded" value = "0"/>
    </bean>
    <!--    <bean id = "machine" class = "com.coffeemaker.domain.Machine"/> -->
