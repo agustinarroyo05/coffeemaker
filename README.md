@@ -1,4 +1,4 @@
-# coffeemaker
+# CoffeeMaker
 Coffee Maker Machine
 
 To startup the project, you must clone the repo in a directory.
@@ -11,4 +11,4 @@ After that you could enter to http://localhost:8080/ and see the Coffee Machine 
 You can buy products if you have the stock in the machine. 
 To see the machine's stock you can use your browser at http://localhost:8080/coffeemaker/products
 
-
+You can modify the products in the machine with the beans.xml file located in the project.
